@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodTruckRetriever.Console", "FoodTruckRetriever.Console\FoodTruckRetriever.Console.csproj", "{A7CCA75D-6CAC-45DE-9970-0C41A2A195EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodTruckRetriever.Console.Tests", "FoodTruckRetriever.Console.Tests\FoodTruckRetriever.Console.Tests.csproj", "{D907BE4B-A193-4A28-B4A4-1849B04943D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7F75EA41-5339-4840-8EA1-AAC8A2E3A2F1}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7CCA75D-6CAC-45DE-9970-0C41A2A195EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7CCA75D-6CAC-45DE-9970-0C41A2A195EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7CCA75D-6CAC-45DE-9970-0C41A2A195EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7CCA75D-6CAC-45DE-9970-0C41A2A195EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D907BE4B-A193-4A28-B4A4-1849B04943D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D907BE4B-A193-4A28-B4A4-1849B04943D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D907BE4B-A193-4A28-B4A4-1849B04943D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D907BE4B-A193-4A28-B4A4-1849B04943D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E8F6453-16F6-42E3-9131-CA3EB2FA0160}
+	EndGlobalSection
+EndGlobal
