@@ -41,6 +41,7 @@ namespace FoodTruckRetriever.Console.Tests
             await foodTruckRetriever.Run();
 
             //Assert
+            string value = stringWriter.ToString();
             Assert.Equal("Welcome to the San Francisco Food Truck Finder App\r\n\r\nPlease enter your Latitude\r\nPlease enter your Longitude\r\nPlease enter the range in miles you want to search within\r\n\r\nGeorges FoodTruck\r\n405 Allbright\r\nFar\r\nFarther\r\nIndian Food\r\n\r\n\r\nTodds FoodTruck\r\nUnknown\r\nFar\r\nFarther\r\nNot Indian Food\r\n\r\n\r\nMegans FoodTruck\r\nUnknown\r\nFar\r\nFarther\r\nCloudy with MeatBalls\r\n\r\n\r\n", value);
         }
     }
