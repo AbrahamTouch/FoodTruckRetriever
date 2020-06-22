@@ -64,7 +64,7 @@ namespace FoodTruckRetriever.Console.Repositories
 
         }
 
-        private static async Task<IList<FoodTruck>> GetFoodTruckFromWeb(WebSettingsConfiguration webSettings, string day, double originLatitude, double originLongitude, double rangeInMiles)
+        private static async Task<IList<FoodTruck>> GetFoodTruckFromWeb(WebSettingsConfiguration webSettings, string day, double originLatitude, double originLongitude, double rangeInMeters)
         {
             using (HttpClient webClient = new HttpClient())
             {
@@ -76,7 +76,7 @@ namespace FoodTruckRetriever.Console.Repositories
                 uriBuilder.Path = webSettings.Path;
 
                 //Query will select the data we need and partially filter out unwanted foodtrucks as well as order the data by application
-                uriBuilder.Query = String.Format(QUERYSTRING, day, originLatitude, originLongitude, rangeInMiles);
+                uriBuilder.Query = String.Format(QUERYSTRING, day, originLatitude, originLongitude, rangeInMeters);
 
                 HttpResponseMessage response = webClient.GetAsync(uriBuilder.Uri).Result;
 
